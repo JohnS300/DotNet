@@ -7,4 +7,8 @@ namespace FirstApp{
         }
     }
 }
-//is this main?
+//testing functionalities of C#
+
+/*
+multiline comments similar to java
+*/
