@@ -12,7 +12,7 @@ namespace FirstApp{
 
             int i , x, z, y;
 
-            i = 5; x = 10 ; z =20 ; y = 25;
+            i = 5; x = 10 ; z = y = 25;
             int sum = i + x + z + y;
             Console.WriteLine($"Sum = {sum} ");
 
