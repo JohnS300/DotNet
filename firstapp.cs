@@ -18,6 +18,7 @@ namespace FirstApp{
             int sum = i + x + z + y;
             //Explicit casting with int
             sum += (int)f1; 
+            //String Interpolation
             Console.WriteLine($"Sum = {sum} ");
 
         }
