@@ -21,6 +21,15 @@ namespace FirstApp{
             //String Interpolation
             Console.WriteLine($"Sum = {sum} ");
 
+            Console.WriteLine("Enter your age:");
+            //User Input with explicit conversion to Int using Conver.To method
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"So your age is : {age} , correct Y/N?");
+            //Use a Ternary operator
+            bool correct = Console.ReadLine().ToUpper() == "Y"? true : false ;
+            //the below is the faster aproach
+            //bool correct = Console.ReadLine().ToUpper() == "Y";
+            Console.WriteLine(correct);
         }
     }
 }
