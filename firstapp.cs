@@ -30,6 +30,12 @@ namespace FirstApp{
             //the below is the faster aproach
             //bool correct = Console.ReadLine().ToUpper() == "Y";
             Console.WriteLine(correct);
+            
+
+            int weight = Convert.ToInt32(Console.ReadLine());
+            if (weight < 40 || weight > 90){
+                Console.WriteLine($"Your weight is {weight} and that means you need to go speak with a doctor.");
+            };
         }
     }
 }
