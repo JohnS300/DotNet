@@ -74,6 +74,19 @@ namespace FirstApp{
                     Console.WriteLine("Computer is broken so go for a 50 km run");
                     break;
             }
+
+            // Outer loop
+            for (int temp1 = 1; temp1 <= 2; ++temp1) 
+            {
+                Console.WriteLine("Outer: " + temp1);  // Executes 2 times
+                
+                // Inner loop
+                for (int j = 1; j <= 3; j++) 
+                {
+                Console.WriteLine(" Inner: " + j);  // Executes 6 times (2 * 3)
+                }
+            }   
+
         }
     }
 }
