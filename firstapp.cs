@@ -90,11 +90,16 @@ namespace FirstApp{
                 }
             }   
 
-        string[] cars = {"Toyota", "Honda", "Mazda"} ;
-        Console.WriteLine($"Is your car one of the ones in this list?\n {string.Join(", ", cars)} \nY/N?");
-        correct = Console.ReadLine().ToUpper() == "Y"? true : false ;
-        Console.WriteLine(correct?"You\'ve got a reliable car" : "Your car will probably not last 30 years");
+            string[] cars = {"Toyota", "Honda", "Mazda"} ;
+            Console.WriteLine($"Is your car one of the ones in this list?\n {string.Join(", ", cars)} \nY/N?");
+            correct = Console.ReadLine().ToUpper() == "Y"? true : false ;
+            Console.WriteLine(correct?"You\'ve got a reliable car" : "Your car will probably not last 30 years");
 
+            Console.WriteLine("Below are listed the most reliable cars of 2024");
+            foreach( string c in cars){
+                Console.WriteLine(c);
+            };
+            
         }
 
     }
