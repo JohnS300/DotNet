@@ -95,11 +95,12 @@ namespace FirstApp{
             correct = Console.ReadLine().ToUpper() == "Y"? true : false ;
             Console.WriteLine(correct?"You\'ve got a reliable car" : "Your car will probably not last 30 years");
 
-            Console.WriteLine("Below are listed the most reliable cars of 2024");
+            Console.WriteLine("Below are listed the most reliable cars of 2024 sorted Alphabetically");
+            Array.Sort(cars);
             foreach( string c in cars){
                 Console.WriteLine(c);
             };
-            
+
         }
 
     }
