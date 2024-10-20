@@ -47,6 +47,33 @@ namespace FirstApp{
             //Creating a datetime object to get the currentt day of the week.Shortened version.
             DayOfWeek currentDay = DateTime.Now.DayOfWeek;
             Console.WriteLine($"Today is: {currentDay}");
+
+            switch(currentDay){
+                case DayOfWeek.Monday:
+                    Console.WriteLine("Go for a run 1 km");
+                    break;
+                case DayOfWeek.Tuesday:
+                    Console.WriteLine("Go for a run 2 km");
+                    break;
+                case DayOfWeek.Wednesday:
+                    Console.WriteLine("Go for a run 3 km");
+                    break;
+                case DayOfWeek.Thursday:
+                    Console.WriteLine("Go for a run 4 km");
+                    break;
+                case DayOfWeek.Friday:
+                    Console.WriteLine("Go for a run 5 km");
+                    break;
+                case DayOfWeek.Saturday:
+                    Console.WriteLine("Go for a run 10 km");
+                    break;
+                case DayOfWeek.Sunday:
+                    Console.WriteLine("Go for a run 10 km");
+                    break;
+                default:
+                    Console.WriteLine("Computer is broken so go for a 50 km run");
+                    break;
+            }
         }
     }
 }
