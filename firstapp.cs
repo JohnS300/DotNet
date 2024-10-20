@@ -76,13 +76,16 @@ namespace FirstApp{
             }
 
             // Outer loop
-            for (int temp1 = 1; temp1 <= 2; ++temp1) 
+            for (int temp1 = 1; temp1 <= 5; ++temp1) 
             {
                 Console.WriteLine("Outer: " + temp1);  // Executes 2 times
                 
-                // Inner loop
-                for (int j = 1; j <= 3; j++) 
+                // Inner loop with Continue to skip an iteration
+                for (int j = 1; j <= 10; j++) 
                 {
+                if (j == 3 || j == 5){
+                    continue;
+                }
                 Console.WriteLine(" Inner: " + j);  // Executes 6 times (2 * 3)
                 }
             }   
